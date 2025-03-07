@@ -29,7 +29,31 @@ h2 {
     margin-bottom: 2rem;
 }
 
+.section.beneficios {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    
+}
 
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card h3 {
+    color: #d47f00;
+}
+.card p {
+    color: #333;
+}
 .btn {
     display: inline-flex;
     align-items: center;
@@ -52,8 +76,8 @@ h2 {
 }
 
 .btn-accent {
-    background-color: #fbbf24;
-    color: #1f2937;
+    background-color: #22c55e;
+    color: #fff;
 }
 
 .btn-accent:hover {
@@ -153,7 +177,7 @@ h2 {
 
 .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajuste da largura mínima para 250px */
     gap: 2rem;
     margin-top: 3rem;
 }
@@ -172,10 +196,7 @@ h2 {
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
-.pricing-card.popular {
-    border: 2px solid #2563eb;
-    transform: scale(1.05);
-}
+
 
 .pricing-card.popular:hover {
     transform: scale(1.05) translateY(-10px);
@@ -217,6 +238,7 @@ h2 {
     color: #2563eb;
     margin: 1rem 0;
 }
+
 
 .currency {
     font-size: 1.5rem;
